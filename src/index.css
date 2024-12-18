@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #444;
+}
+
+.todos {
+    width: 50%;
+    background-color: #333;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.6rem;
+    overflow: scroll;
+    height: 60vh;
+}
+
+.todo {
+    background-color: #222;
+    margin: .5rem;
+    border-radius: .6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    transition: all .5s;
+}
+
+.todo:hover {
+    background-color: #111;
+}
+
+.todo p {
+    opacity: 0.5;
+}
+
+.btn {
+    border: none;
+    background-color: transparent;
+    color: red;
+    cursor: pointer;
+}
+
+.form {
+    width: 50%;
+    background-color: #333;
+    color: white;
+    padding: .5rem;
+    border-radius: .6rem;
+    margin-bottom: .5rem;
+}
+
+.form_field {
+    margin: 1rem 0;
+    display: flex;
+}
+
+.form_field label {
+    flex-basis: 20%;
+}
+
+.form_field input {
+    flex-basis: 80%;
+}
+
+.form_field textarea {
+    flex-basis: 80%;
+    resize: none;
+    border: none;
+    border-radius: .6rem;
+    padding: .2rem;
+}
+
+.form button {
+    border: none;
+    border-radius: .6rem;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.form button:hover {
+    background-color: orange;
+    color: white;
+}
+
