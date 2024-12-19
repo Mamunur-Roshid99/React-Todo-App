@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #4C4C4C;
+    color: white;
+    height: 100vh;
+}
+
+.container h1 {
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 50px;
+}
+
+.todos {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .8rem;
+}
+
+.todo {
+    width: 300px;
+    border-radius: .6rem;
+    background-color: #2C2C2C;
+    padding: .8rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.todo h2 {
+    font-size: 20px;
+    color: yellow;
+}
+
+.todo p {
+    font-size: 16px;
+    color: white;
+}
+
+.new_todo {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    background-color: #2C2C2C;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: .8rem;
+    width: 400px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.new_todo div {
+    display: flex;
+    flex-direction: column;
+}
+
+.new_todo div input {
+    padding: .5rem;
+    font-size: 16px;
+    border-radius: .4rem;
+    border: none;
+}
+
+.new_todo textarea {
+    padding: .5rem;
+    font-size: 16px;
+    height: 80px;
+    border-radius: .4rem;
+    border: none;
+}
+
+.new_todo button {
+    padding: .5rem;
+    font-size: 16px;
+    border-radius: .4rem;
+    background-color: #4C4C4C;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.new_todo button:hover {
+    background-color: orange;
+}

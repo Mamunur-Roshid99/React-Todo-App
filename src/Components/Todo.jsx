@@ -1,30 +1,13 @@
-// import React from 'react'
+import React from 'react'
 
-const Todo = (props) => {
-    const { title, desc } = props.todo;
-    const { id } = props;
-
-    const handleClick = (id) =>{
-        props.onRemoveTodo(id);
-    }
-
+const Todo = ({ id, title, desc }) => {
   return (
-    <article className="todo">
-
-        <div>
-            <h3>{title}</h3>
-            <p>{desc}</p>
-        </div>
-        <div>
-            <button className="btn" onClick={()=> {
-                handleClick(id)
-            }}>
-                <i className="fa fa-trash fa-2x"></i>
-            </button>
-        </div>
-      
-    </article>
-  )
-}
+    <div className="todo">
+        <h2>{title}</h2>
+        <p>{desc}</p>
+    </div>
+  );
+};
 
 export default Todo
+

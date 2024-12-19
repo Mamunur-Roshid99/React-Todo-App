@@ -1,19 +1,15 @@
-// import React from 'react'
-
-import Todo from "./Todo";
+import React from 'react'
+import Todo from './todo'
 
 const Todos = (props) => {
   return (
-    <section className="todos">
-      {props.todos.map((todo) => (
-        <Todo
-          todo={todo.todo}
-          key={todo.id}
-          id={todo.id}
-          onRemoveTodo={props.onRemoveTodo}
-        />
-      ))}
-    </section>
+    <article className="todos">
+      {
+       props.todos.map((todo, index) => (
+         <Todo key={index} {...todo} />
+      ))
+      }
+    </article>
   );
 }
 
